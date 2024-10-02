@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definiciones: Eficacia y Eficiencia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('general.jpg'); /* Fondo general de la página */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .definition-box {
+            width: 80%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            background-image: url('recuadro.jpg'); /* Fondo específico para los recuadros */
+            background-size: cover;
+            background-position: center;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para resaltar el recuadro */
+        }
+        .definition-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .definition-text {
+            width: 70%;
+            font-size: 1.2rem;
+        }
+        .definition-text h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.6rem;
+        }
+        .definition-text p {
+            margin: 0;
+        }
+        .reference {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .reference a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .reference a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .definition-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            .definition-box img {
+                margin-top: 15px;
+                width: 120px;
+                height: 120px;
+            }
+            .definition-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Primera definición: Eficacia -->
+    <div class="definition-box">
+        <div class="definition-text">
+            <h2>#{temas.tituloU}</h2>
+            <p>#{temas.definicionU}</p>
+            <div class="reference">
+                <p>Fuente: <a href="#{temas.referenciaU}" target="_blank">Wikipedia - Eficacia</a></p>
+            </div>
+        </div>
+        <img src="eficacia.jpg" alt="Imagen de Eficacia" />
+    </div>
+
+    <!-- Segunda definición: Eficiencia -->
+    <div class="definition-box">
+        <div class="definition-text">
+            <h2>#{temas.tituloD}</h2>
+            <p> #{temas.definicionD}</p>
+            <div class="reference">
+                <p>Fuente: <a href="#{temas.referenciaD}" target="_blank">Wikipedia - Eficiencia</a></p>
+            </div>
+        </div>
+        <img src="eficiencia.jpg" alt="Imagen de Eficiencia" />
+    </div>
+</div>
+
+</body>
+</html>
